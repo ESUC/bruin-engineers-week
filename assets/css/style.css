@@ -86,7 +86,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #005785;
-  border-top-color: #faefcf;
+  border-top-color: #fff;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -376,6 +376,7 @@ h6 {
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
+  color: #15222b;
   margin: 15px;
 }
 
