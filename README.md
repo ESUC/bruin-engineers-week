@@ -1,2 +1,2 @@
 # eweek
-E-Week Website
+Bruin Engineers Week Website
