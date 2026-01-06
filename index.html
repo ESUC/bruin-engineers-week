@@ -40,52 +40,32 @@
 
   <!-- Custom Styles -->
   <style>
+    /* Hero primary CTA (Sign Up) */
     #hero .btn-get-started[target="_blank"] {
       font-family: "Montserrat", sans-serif;
       text-transform: none;
       font-weight: 700;
-      font-size: 1.4em;
-      letter-spacing: 0.5px;
+      font-size: 1.05em;
+      letter-spacing: 0.15px;
       display: inline-block;
-      padding: 18px 50px;
-      border-radius: 50px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      color: #005785;
-      background: linear-gradient(135deg, #ffc72c 0%, #ffd84d 100%);
-      border: 3px solid #ffc72c;
-      box-shadow: 0 8px 25px rgba(255, 199, 44, 0.4), 0 0 0 0 rgba(255, 199, 44, 0.7);
-      position: relative;
-      overflow: hidden;
-    }
-    #hero .btn-get-started[target="_blank"]::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.3);
-      transform: translate(-50%, -50%);
-      transition: width 0.6s, height 0.6s;
-    }
-    #hero .btn-get-started[target="_blank"]:hover::before {
-      width: 300px;
-      height: 300px;
+      padding: 12px 32px;
+      border-radius: 30px;
+      transition: all 0.16s ease;
+      color: #ffc72c;
+      background: transparent;
+      border: 2px solid #ffc72c;
+      box-shadow: none;
     }
     #hero .btn-get-started[target="_blank"]:hover {
-      background: linear-gradient(135deg, #ffd84d 0%, #ffe066 100%);
+      background: rgba(255, 199, 44, 0.12);
+      color: #ffd84d;
       border-color: #ffd84d;
-      color: #005785;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 12px 35px rgba(255, 199, 44, 0.5), 0 0 0 4px rgba(255, 199, 44, 0.2);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     }
     #hero .btn-get-started[target="_blank"]:active {
-      transform: translateY(-1px) scale(0.98);
-    }
-    #hero .btn-get-started[target="_blank"] span {
-      position: relative;
-      z-index: 1;
+      transform: translateY(0);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
   </style>
 
@@ -143,9 +123,9 @@
     <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
       <h1>Bruin Engineers Week <i class="bi bi-geo-alt" style="color: #fff;"></i> UCLA</h2></h1>
       <h2>Hosted by ESUC</h2>
-      <div class="d-flex flex-column align-items-center" style="gap: 20px;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWxlITAcfW5IlGDGE7Vq-3yt7f88IIJP0KcYx9u2I_NT2uZA/viewform" class="btn-get-started" target="_blank" rel="noopener"><span>Sign Up</span></a>
+      <div class="d-flex flex-column align-items-center" style="gap: 18px;">
         <a href="#about" class="btn-get-started scrollto">LEARN MORE</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWxlITAcfW5IlGDGE7Vq-3yt7f88IIJP0KcYx9u2I_NT2uZA/viewform" class="btn-get-started" target="_blank" rel="noopener"><span>Sign Up</span></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -396,7 +376,7 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/events/ArtGallery2025.png" alt="" class="img-fluid">
+                <img src="assets/img/events/artgallery.png" alt="" class="img-fluid">
               </div>
             </div>
           </div>
