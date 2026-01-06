@@ -15,7 +15,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ESUC - Bruin Engineers Week</title>
+  <title>Art Gallery - ESUC Bruin Engineers Week</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -38,57 +38,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Custom Styles -->
-  <style>
-    #hero .btn-get-started[target="_blank"] {
-      font-family: "Montserrat", sans-serif;
-      text-transform: none;
-      font-weight: 700;
-      font-size: 1.4em;
-      letter-spacing: 0.5px;
-      display: inline-block;
-      padding: 18px 50px;
-      border-radius: 50px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      color: #005785;
-      background: linear-gradient(135deg, #ffc72c 0%, #ffd84d 100%);
-      border: 3px solid #ffc72c;
-      box-shadow: 0 8px 25px rgba(255, 199, 44, 0.4), 0 0 0 0 rgba(255, 199, 44, 0.7);
-      position: relative;
-      overflow: hidden;
-    }
-    #hero .btn-get-started[target="_blank"]::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.3);
-      transform: translate(-50%, -50%);
-      transition: width 0.6s, height 0.6s;
-    }
-    #hero .btn-get-started[target="_blank"]:hover::before {
-      width: 300px;
-      height: 300px;
-    }
-    #hero .btn-get-started[target="_blank"]:hover {
-      background: linear-gradient(135deg, #ffd84d 0%, #ffe066 100%);
-      border-color: #ffd84d;
-      color: #005785;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 12px 35px rgba(255, 199, 44, 0.5), 0 0 0 4px rgba(255, 199, 44, 0.2);
-    }
-    #hero .btn-get-started[target="_blank"]:active {
-      transform: translateY(-1px) scale(0.98);
-    }
-    #hero .btn-get-started[target="_blank"] span {
-      position: relative;
-      z-index: 1;
-    }
-  </style>
-
   <!-- =======================================================
   * Template Name: Dewi
   * Updated: Mar 09 2023 with Bootstrap v5.2.3
@@ -109,10 +58,10 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#events">Events</a></li>
-          <li><a class="nav-link scrollto " href="#display">Art Display</a></li>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="index.html#about">About</a></li>
+          <li><a class="nav-link" href="index.html#events">Events</a></li>
+          <li><a class="nav-link active" href="art-gallery.html">Art Gallery</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -130,7 +79,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdWxlITAcfW5IlGDGE7Vq-3yt7f88IIJP0KcYx9u2I_NT2uZA/viewform" target="_blank" rel="noopener">Sign Up</a></li>
+          <!-- <li><a class="getstarted scrollto" href="https://tinyurl.com/e-week-2023" target="_blank" rel="noopener">RSVP</a></li>-->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -139,296 +88,35 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
-      <h1>Bruin Engineers Week <i class="bi bi-geo-alt" style="color: #fff;"></i> UCLA</h2></h1>
-      <h2>Hosted by ESUC</h2>
-      <div class="d-flex flex-column align-items-center" style="gap: 20px;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWxlITAcfW5IlGDGE7Vq-3yt7f88IIJP0KcYx9u2I_NT2uZA/viewform" class="btn-get-started" target="_blank" rel="noopener"><span>Sign Up</span></a>
-        <a href="#about" class="btn-get-started scrollto">LEARN MORE</a>
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="150">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h1>Art Gallery</h1>
+          <h2>Showcasing the Creative Works of Engineering Students</h2>
+          <p style="margin-top: 20px; color: #fff;">Art Gallery is an annual digital showcase of the creative works of engineering students. [A.I. usage is strictly prohibited]</p>
+        </div>
       </div>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= About Boxes Section ======= -->
-    <section id="about" class="about-boxes">
+    <!-- ======= Winners Section ======= -->
+    <section id="winners" class="portfolio" style="padding-top: 60px; padding-bottom: 40px; background-color: #f8f9fa;">
       <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="card">
-              <img src="assets/img/about/about-1.jpg" class="card-img-top" alt="...">
-              <div class="card-icon">
-                <i class="ri-book-open-line"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Our Story</a></h5>
-                <p class="card-text">Bruin Engineers Week (E-Week) is an annual week-long series of events hosted by ESUC during Week 3 of Spring Quarter in celebration of all things engineering.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="card">
-              <img src="assets/img/about/about-2.jpg" class="card-img-top" alt="...">
-              <div class="card-icon">
-                <i class="ri-calendar-check-line"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Our Plan</a></h5>
-                <p class="card-text">Numerous events involving volunteering, networking, problem-solving, exercising, expressing ideas, and having fun will be available for students to attend.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
-              <img src="assets/img/about/about-3.jpg" class="card-img-top" alt="...">
-              <div class="card-icon">
-                <i class="ri-focus-2-line"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Our Vision</a></h5>
-                <p class="card-text">Events held during Bruin E-Week are designed to bring students together through innovation, outreach, and fun as well as promote individual development.</p>
-              </div>
-            </div>
+        <div class="section-title">
+          <h2>Winners</h2>
+          <p>Top Art Submissions</p>
+        </div>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <!-- Winners will be added here with filter-winners class -->
+          <div class="col-12 text-center">
+            <p style="color: #666; font-style: italic;">Winners will be announced after voting closes.</p>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Boxes Section -->
-
-
-    <!-- ======= Features Section ======= -->
-    <section id="events" class="features">
-      <div class="container" data-aos="fade-up">
-
-        <ul class="nav nav-tabs d-flex justify-content-between" 
-          style="flex-wrap: wrap; gap: 8px;">
-
-        <li class="nav-item" style="flex: 1;">
-          <a class="nav-link active show text-center d-flex justify-content-center align-items-center"
-            data-bs-toggle="tab" href="#tab-1"
-            style="font-size: 12px; height: 100px;">
-            <i class="ri-rocket-line" style="font-size: 40px;"></i>
-            <h4 class="d-none d-lg-block" style="font-size: 20px;">Makers Day</h4>
-          </a>
-        </li>
-
-        <li class="nav-item" style="flex: 1;">
-          <a class="nav-link text-center d-flex justify-content-center align-items-center"
-            data-bs-toggle="tab" href="#tab-2"
-            style="font-size: 12px; height: 100px;">
-            <i class="ri-global-line" style="font-size: 40px;"></i>
-            <h4 class="d-none d-lg-block" style="font-size: 20px;">Alumni Networking</h4>
-          </a>
-        </li>
-
-        <li class="nav-item" style="flex: 1;">
-          <a class="nav-link text-center d-flex justify-content-center align-items-center"
-            data-bs-toggle="tab" href="#tab-3"
-            style="font-size: 12px; height: 100px;">
-            <i class="ri-settings-5-line" style="font-size: 40px;"></i>
-            <h4 class="d-none d-lg-block" style="font-size: 20px;">Talent Show</h4>
-          </a>
-        </li>
-        
-        <li class="nav-item" style="flex: 1;">
-          <a class="nav-link text-center d-flex justify-content-center align-items-center"
-            data-bs-toggle="tab" href="#tab-4"
-            style="font-size: 12px; height: 100px;">
-            <i class="ri-sun-line" style="font-size: 40px;"></i>
-            <h4 class="d-none d-lg-block" style="font-size: 20px;">Face the Faculty</h4>
-          </a>
-        </li>
-
-        <li class="nav-item" style="flex: 1;">
-          <a class="nav-link text-center d-flex justify-content-center align-items-center"
-            data-bs-toggle="tab" href="#tab-5"
-            style="font-size: 12px; height: 100px;">
-            <i class="ri-group-2-line" style="font-size: 40px;"></i>
-            <h4 class="d-none d-lg-block" style="font-size: 20px;">Experience Engineering</h4>
-          </a>
-        </li>
-
-        <li class="nav-item" style="flex: 1;">
-          <a class="nav-link text-center d-flex justify-content-center align-items-center"
-            data-bs-toggle="tab" href="#tab-6"
-            style="font-size: 12px; height: 100px;">
-            <i class="ri-artboard-line" style="font-size: 40px;"></i>
-            <h4 class="d-none d-lg-block" style="font-size: 20px;">Art Gallery</h4>
-          </a>
-        </li>
-
-        <!-- <li class="nav-item" style="flex: 1;">
-          <a class="nav-link text-center d-flex justify-content-center align-items-center"
-            data-bs-toggle="tab" href="#tab-7"
-            style="font-size: 12px; height: 100px;">
-            <i class="ri-user-voice-line" style="font-size: 40px;"></i>
-            <h4 class="d-none d-lg-block" style="font-size: 20px;">YOUcla</h4>
-          </a>
-        </li> -->
-      </ul>    
-        <div class="tab-content">
-          <div class="tab-pane" id="tab-4">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Face the Faculty</h3>
-                <p class="fst-italic">
-                  At Face the Faculty, teams composed of students, staff and faculty face off in friendly games of dodgeball and flag football. Enjoy light refreshments and lots of fun!
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Date: Thursday, January 15, 2026</li>
-                  <li><i class="ri-check-double-line"></i> Time: Dodgeball 1:00 PM - 3:00 PM, Flag Football 6:00 PM - 8:00 PM</li>
-                  <li><i class="ri-check-double-line"></i> Location: IM Field</li>
-                </ul>
-                <p>
-                  Join us in a battle of brawn and fight against faculty and student organizations.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/events/facethefaculty.png" alt="Face the Faculty" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab-3">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Engineers' Talent Show</h3>
-                <p class="fst-italic">
-                  Engineers' Talent Show is organized to give engineering students the scene to showcase their amazing talents!
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Date: Wednesday, January 14, 2026</li>
-                  <li><i class="ri-check-double-line"></i> Time: 6:00 PM - 8:00 PM</li>
-                  <li><i class="ri-check-double-line"></i> Location: Mong Auditorium (Engineering VI)
-                  </li>
-                </ul>
-                <p>
-                  Are you tired of people thinking engineers are only good at math and science? It's time to prove them wrong! Come show off your hidden talents - whether that's singing, dancing, comedy, juggling, or something totally unique - at The Engineers' Talent Show!
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/events/talentshow.png" alt="Engineers Talent Show" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab-2">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Alumni Networking Night</h3>
-                <p class="fst-italic">
-                  ESUC's Alumni Night during Bruin Engineers Week, featuring UCLA engineering alumni and representatives from various student organizations coming together to share experiences and connect with current students.
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Date: Tuesday, January 13, 2026</li>
-                  <li><i class="ri-check-double-line"></i> Time: 6:00 PM - 8:00 PM</li>
-                  <li><i class="ri-check-double-line"></i> Location: Cohen Room (Engineering UI)</li>
-                </ul>
-                <p>
-                  Get ready for Alumni Night during Bruin Engineers Week, as ESUC brings together alumni from engineering orgs for an evening full of stories, networking, and strong Bruin spirit.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/events/alumninight.png" alt="Alumni Night" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane active show" id="tab-1">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Makers Day</h3>
-                <p class="fst-italic">
-                  Maker Day is a two-hour build-a-thon where students think outside the box to design and build creative solutions to a surprise prompt. It's a fun, hands-on challenge that encourages meeting new people, collaborating, and trying something new.
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Date: Monday, January 12, 2026</li>
-                  <li><i class="ri-check-double-line"></i> Time: 6:00 PM - 8:00 PM</li>
-                  <li><i class="ri-check-double-line"></i> Location: Boelter Makerspace (1805 Boelter Hall)</li>
-                </ul>
-                <p>
-                  Come to Makersday, where you will design and build a solution for a given prompt in teams of three! Creations will be judged by a panel, and cash prizes will be awarded to the top three teams.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/events/buildathon.png" alt="Makers Day" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab-5">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Experience Engineering</h3>
-                <p class="fst-italic">
-                  Experience Engineering has UCLA Engineering student organizations create and present interactive workshops for local middle schoolers to learn about and become inspired by engineering.
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Date: Friday, January 16, 2026</li>
-                  <li><i class="ri-check-double-line"></i> Time: 9:30 AM - 12:00 PM</li>
-                  <li><i class="ri-check-double-line"></i> Location: Engineering IV Patio</li>
-                </ul>
-                <p>
-                  Bruin Engineers Week is a decades-old tradition at the University of California, Los Angeles (UCLA) hosted by the Engineering Society of UCLA. 
-                  During this week-long festivities, the UCLA engineering community gathers to celebrate the achievements of the engineering clubs and works together to give back to the greater community. 
-                  One of the primary events is Experience Engineering, during which hundreds of elementary school students are invited to UCLA for a day of hands-on learning outside of a classroom setting. 
-                  This is a rewarding experience for older students to volunteer their time to the community and help foster a love for learning and engineering in younger students.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/events/kidsday.png" alt="Experience Engineering" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab-6">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Art Gallery</h3>
-                <p class="fst-italic">
-                  Art Gallery is an annual digital showcase of the creative works of engineering students. [A.I. usage is strictly prohibited]
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Date: January 12-16, 2026 (All Week)</li>
-                  <li><i class="ri-check-double-line"></i> Time: Whenever Your Heart Desires!</li>
-                  <li><i class="ri-check-double-line"></i> Location: Bruin Engineers-Week Website</li>
-                </ul>
-                <p>
-                  We are looking for creative minds to submit their artworks for the Engineers Week Art Gallery! The artworks will be displayed on our website, and social media platforms. All art mediums are welcome and encouraged.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/events/ArtGallery2025.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <!-- <div class="tab-pane" id="tab-7">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>YOUcla</h3>
-                <p class="fst-italic">
-                  What's your story as an engineering student at UCLA? As part of the much-awaited Bruin Engineers Week, we will be highlighting
-                  student profiles from our very own Samueli Engineering. All engineering students are welcome to share. We look forwared to hearing from you! 
-                  Sign Up <a href="https://docs.google.com/forms/d/e/1FAIpQLScTcETzFGbxfYktYjd0-OKxd-yCyNqR5f6_CTwdQigDiL8PqA/viewform?usp=header" target="_blank" rel="noopener">here</a>
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Date: April 14-18, 2025 (All Week)</li>
-                  <li><i class="ri-check-double-line"></i> Time: Throughout the Week!</li>
-                  <li><i class="ri-check-double-line"></i> Location: Our Instagram (<a href="https://www.instagram.com/esucla/">@esucla</a>)</li>
-                </ul>
-                <p>
-                  YOUcla is a spotlight series for engineering students to reflect on their unique journeys through UCLA. 
-                  Whether you're overcoming challenges, chasing passions, or celebrating milestones, we want to showcase your voice. 
-                  Stories will be featured on our social media throughout Bruin E-Week to inspire, connect, and celebrate the diverse experiences of Samueli students.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/events/YOUcla.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div> -->
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
+    </section><!-- End Winners Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="display" class="portfolio">
