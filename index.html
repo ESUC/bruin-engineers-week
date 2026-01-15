@@ -67,6 +67,55 @@
       transform: translateY(0);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+    
+    /* Art Gallery Announcement Banner */
+    .art-gallery-announcement {
+      font-family: "Montserrat", sans-serif;
+      text-transform: none;
+      font-weight: 600;
+      font-size: 1.3em;
+      letter-spacing: 0.3px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 42px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      color: #fff;
+      background: #e6b020;
+      border: 2px solid #e6b020;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      text-decoration: none;
+    }
+    
+    .art-gallery-announcement:hover {
+      background: #f0ba2e;
+      border-color: #f0ba2e;
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .art-gallery-announcement:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    
+    .art-gallery-announcement i {
+      font-size: 1.15em;
+    }
+    
+    /* Navigation bar art gallery button */
+    .art-gallery-nav {
+      color: #ffc72c !important;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .art-gallery-nav:hover {
+      color: #ffd84d !important;
+      transform: translateY(-1px);
+    }
     .portfolio-info .materials-caption {
       display: block;
       font-size: 12px;
@@ -117,7 +166,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSdWxlITAcfW5IlGDGE7Vq-3yt7f88IIJP0KcYx9u2I_NT2uZA/viewform" target="_blank" rel="noopener">Sign Up</a></li>
+          <li><a class="getstarted art-gallery-nav" href="https://docs.google.com/forms/d/e/1FAIpQLSdVYpxcworQanL6bgVYvwHsjlfsxevmPYe8Kx1bNeG_dkfs_g/viewform?fbclid=PAdGRleAPWU8xleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafIaHudEntTh1DAv-_uU3jFwGwycLMDowHGdSOsw4SrLqzYq_fEblJ-xaEjAA_aem_GoP4wHq8qOiXsd_wHhKkng" target="_blank" rel="noopener"><i class="bi bi-star-fill" style="margin-right: 6px; font-size: 0.9em;"></i>Vote for Art Gallery</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -130,9 +179,12 @@
     <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
       <h1>Bruin Engineers Week <i class="bi bi-geo-alt" style="color: #fff;"></i> UCLA</h2></h1>
       <h2>Hosted by ESUC</h2>
-      <div class="d-flex flex-column align-items-center" style="gap: 18px;">
+      <div class="d-flex flex-column align-items-center" style="gap: 32px;">
         <a href="#about" class="btn-get-started scrollto">LEARN MORE</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWxlITAcfW5IlGDGE7Vq-3yt7f88IIJP0KcYx9u2I_NT2uZA/viewform" class="btn-get-started" target="_blank" rel="noopener"><span>Sign Up</span></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVYpxcworQanL6bgVYvwHsjlfsxevmPYe8Kx1bNeG_dkfs_g/viewform?fbclid=PAdGRleAPWU8xleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafIaHudEntTh1DAv-_uU3jFwGwycLMDowHGdSOsw4SrLqzYq_fEblJ-xaEjAA_aem_GoP4wHq8qOiXsd_wHhKkng" class="art-gallery-announcement" target="_blank" rel="noopener">
+          <i class="bi bi-star-fill" style="margin-right: 8px;"></i>
+          <span>Vote for Art Gallery</span>
+        </a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -381,6 +433,12 @@
                 <p>
                   We are looking for creative minds to submit their artworks for the Engineers Week Art Gallery! The artworks will be displayed on our website, and social media platforms. All art mediums are welcome and encouraged.
                 </p>
+                <div style="margin-top: 20px;">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVYpxcworQanL6bgVYvwHsjlfsxevmPYe8Kx1bNeG_dkfs_g/viewform?fbclid=PAdGRleAPWU8xleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafIaHudEntTh1DAv-_uU3jFwGwycLMDowHGdSOsw4SrLqzYq_fEblJ-xaEjAA_aem_GoP4wHq8qOiXsd_wHhKkng" class="art-gallery-announcement" target="_blank" rel="noopener">
+                    <i class="bi bi-star-fill" style="margin-right: 8px;"></i>
+                    <span>Vote for Art Gallery</span>
+                  </a>
+                </div>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="assets/img/events/artgallery.png" alt="" class="img-fluid">
