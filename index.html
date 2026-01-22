@@ -68,12 +68,12 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     
-    /* Art Gallery Announcement Banner */
+    /* Stay Tuned Announcement Banner */
     .art-gallery-announcement {
       font-family: "Montserrat", sans-serif;
       text-transform: none;
       font-weight: 600;
-      font-size: 1.3em;
+      font-size: 1.1em;
       letter-spacing: 0.3px;
       display: inline-flex;
       align-items: center;
@@ -86,6 +86,7 @@
       border: 2px solid #e6b020;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       text-decoration: none;
+      cursor: default;
     }
     
     .art-gallery-announcement:hover {
@@ -96,25 +97,15 @@
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     }
     
-    .art-gallery-announcement:active {
-      transform: translateY(0);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
-    
     .art-gallery-announcement i {
       font-size: 1.15em;
     }
     
-    /* Navigation bar art gallery button */
+    /* Navigation bar stay tuned text */
     .art-gallery-nav {
       color: #ffc72c !important;
       font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    
-    .art-gallery-nav:hover {
-      color: #ffd84d !important;
-      transform: translateY(-1px);
+      cursor: default;
     }
     .portfolio-info .materials-caption {
       display: block;
@@ -122,6 +113,45 @@
       color: #6c757d;
       margin-top: 2px;
       font-style: italic;
+    }
+    
+    /* Winner Banner */
+    .portfolio-image-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .winner-banner {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, rgba(255, 199, 44, 0.95) 0%, rgba(230, 176, 32, 0.95) 100%);
+      color: #fff;
+      padding: 12px 30px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 1.4em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 6px;
+      z-index: 10;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transform: rotate(5deg);
+      animation: winnerPulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes winnerPulse {
+      0%, 100% {
+        transform: rotate(5deg) scale(1);
+      }
+      50% {
+        transform: rotate(5deg) scale(1.05);
+      }
+    }
+    
+    .portfolio-item:hover .winner-banner {
+      animation: winnerPulse 1s ease-in-out infinite;
+      transform: rotate(5deg) scale(1.05);
     }
   </style>
 
@@ -166,7 +196,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="getstarted art-gallery-nav" href="https://docs.google.com/forms/d/e/1FAIpQLSdVYpxcworQanL6bgVYvwHsjlfsxevmPYe8Kx1bNeG_dkfs_g/viewform?fbclid=PAdGRleAPWU8xleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafIaHudEntTh1DAv-_uU3jFwGwycLMDowHGdSOsw4SrLqzYq_fEblJ-xaEjAA_aem_GoP4wHq8qOiXsd_wHhKkng" target="_blank" rel="noopener"><i class="bi bi-star-fill" style="margin-right: 6px; font-size: 0.9em;"></i>Vote for Art Gallery</a></li>
+          <li><span class="getstarted art-gallery-nav"><i class="bi bi-star-fill" style="margin-right: 6px; font-size: 0.9em;"></i>Stay Tuned for 2027</span></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -179,12 +209,8 @@
     <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
       <h1>Bruin Engineers Week <i class="bi bi-geo-alt" style="color: #fff;"></i> UCLA</h2></h1>
       <h2>Hosted by ESUC</h2>
-      <div class="d-flex flex-column align-items-center" style="gap: 32px;">
+      <div class="d-flex flex-column align-items-center" style="gap: 18px;">
         <a href="#about" class="btn-get-started scrollto">LEARN MORE</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVYpxcworQanL6bgVYvwHsjlfsxevmPYe8Kx1bNeG_dkfs_g/viewform?fbclid=PAdGRleAPWU8xleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafIaHudEntTh1DAv-_uU3jFwGwycLMDowHGdSOsw4SrLqzYq_fEblJ-xaEjAA_aem_GoP4wHq8qOiXsd_wHhKkng" class="art-gallery-announcement" target="_blank" rel="noopener">
-          <i class="bi bi-star-fill" style="margin-right: 8px;"></i>
-          <span>Vote for Art Gallery</span>
-        </a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -433,12 +459,6 @@
                 <p>
                   We are looking for creative minds to submit their artworks for the Engineers Week Art Gallery! The artworks will be displayed on our website, and social media platforms. All art mediums are welcome and encouraged.
                 </p>
-                <div style="margin-top: 20px;">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVYpxcworQanL6bgVYvwHsjlfsxevmPYe8Kx1bNeG_dkfs_g/viewform?fbclid=PAdGRleAPWU8xleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafIaHudEntTh1DAv-_uU3jFwGwycLMDowHGdSOsw4SrLqzYq_fEblJ-xaEjAA_aem_GoP4wHq8qOiXsd_wHhKkng" class="art-gallery-announcement" target="_blank" rel="noopener">
-                    <i class="bi bi-star-fill" style="margin-right: 8px;"></i>
-                    <span>Vote for Art Gallery</span>
-                  </a>
-                </div>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="assets/img/events/artgallery.png" alt="" class="img-fluid">
@@ -496,6 +516,21 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Winners Section -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-winners">
+            <a href="assets/img/art/art gallery final/las-vegas.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+              <div class="portfolio-image-wrapper">
+                <img src="assets/img/art/art gallery final/las-vegas.png" class="img-fluid" alt="2026 Submission 14">
+                <div class="winner-banner">WINNER</div>
+              </div>
+              <div class="portfolio-info">
+                <h4>2023 Las Vegas GP helmet</h4>
+                <p>Emma Zhao</p>
+                <p class="materials-caption">Materials: markers</p>
+              </div>
+            </a>
+          </div>
 
           <!-- 2026 Cropped Art Gallery submissions (moved to top for recency) -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-submissions">
@@ -637,17 +672,6 @@
                 <h4>Moonlight Magic and Sunset Splendor</h4>
                 <p>Shriya Char</p>
                 <p class="materials-caption">Materials: Acrylic paint </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-submissions">
-            <a href="assets/img/art/art gallery final/las-vegas.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
-              <img src="assets/img/art/art gallery final/las-vegas.png" class="img-fluid" alt="2026 Submission 14">
-              <div class="portfolio-info">
-                <h4>2023 Las Vegas GP helmet</h4>
-                <p>Emma Zhao</p>
-                <p class="materials-caption">Materials: markers</p>
               </div>
             </a>
           </div>
